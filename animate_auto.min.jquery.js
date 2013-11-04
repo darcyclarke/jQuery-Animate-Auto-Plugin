@@ -9,4 +9,4 @@
 * 
 */
 
-var animate=jQuery.fn.animate;jQuery.fn.animate=function(){var e=arguments[0];var t=jQuery.speed(arguments[1],arguments[2],arguments[3]);var n,r,i,s;return this.each(function(o,u){n=$(u);r=n.clone().css({height:"auto",width:"auto"}).appendTo(n.parent());i=r.css("height");s=r.css("width");r.remove();var a={};if(e.height&&e.height==="auto"){a.height=e.height=i}if(e.width&&e.width==="auto"){a.width=e.width=s}var f=function(){for(var e in a){n.css(e,"auto")}if(t.callback){t.callback.call(n)}};animate.call(n,e,t)})}
+(function(e){var t=e;var n=e.fn.animate;e.fn.animate=function(){var r=arguments[0];var i=e.speed(arguments[1],arguments[2],arguments[3]);var s,o,u,a;return this.each(function(e,f){s=t(f);o=s.clone().css({height:"auto",width:"auto"}).appendTo(s.parent());u=o.css("height");a=o.css("width");o.remove();var l={};if(r.height&&r.height==="auto"){l.height=r.height=u}if(r.width&&r.width==="auto"){l.width=r.width=a}var c=function(){for(var e in l){s.css(e,"auto")}if(i.callback){i.callback.call(s)}};n.call(s,r,i)})}})(jQuery)
