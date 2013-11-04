@@ -1,0 +1,11 @@
+{
+  "name": "jQuery-animateAuto",
+  "description": "Allow 'auto' to be a workable value for height and width in jQuery animations",
+  "author": {
+    "name": "Alex Zaslavsky"
+  },
+  "version": "1.0",
+  "dependencies": {
+    "jquery": ">=1.8.0"
+  }
+}
