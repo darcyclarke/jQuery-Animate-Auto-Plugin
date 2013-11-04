@@ -9,4 +9,4 @@
 * 
 */
 
-jQuery.fn.animateAuto=function(e,t,n){var r,i,s;return this.each(function(o,u){u=$(u);r=u.clone().css({height:"auto",width:"auto"}).appendTo(u.parent());i=r.css("height");s=r.css("width");r.remove();var a=function(){if(prop!=="both"){u.css(prop,"auto")}else{u.css({height:"auto",width:"auto"})}if(n){n.call(u)}};if(e.height&&e.height==="auto"){e.height=i}if(e.width&&e.width==="auto"){e.width=s}u.animate(e,t,a)})}
+var animate=jQuery.fn.animate;jQuery.fn.animate=function(){var e=arguments[0];var t=jQuery.speed(arguments[1],arguments[2],arguments[3]);var n,r,i,s;return this.each(function(o,u){n=$(u);r=n.clone().css({height:"auto",width:"auto"}).appendTo(n.parent());i=r.css("height");s=r.css("width");r.remove();var a={};if(e.height&&e.height==="auto"){a.height=e.height=i}if(e.width&&e.width==="auto"){a.width=e.width=s}var f=function(){for(var e in a){n.css(e,"auto")}if(t.callback){t.callback.call(n)}};animate.call(n,e,t)})}
