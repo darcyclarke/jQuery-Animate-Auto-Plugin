@@ -19,5 +19,5 @@ License
 ------------
 MIT License, Copyright 2013, Alex Zaslavsky
 
-This plugin is developed from the original source provided by at the following URL:
+This plugin is developed from the original source provided at the following URL:
 http://darcyclarke.me/development/fix-jquerys-animate-to-allow-auto-values/
