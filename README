@@ -1,6 +1,6 @@
-jQuery Animate Auto Values Plugin v.1.0
+jQuery animateAuto Plugin
+
+This plugin is developed from the original source provided by at the following URL:
 http://darcyclarke.me/development/fix-jquerys-animate-to-allow-auto-values/
 
-Copyright 2011, Darcy Clarke
-Do what you want license
-
+Licensed using the MIT License.
