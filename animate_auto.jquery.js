@@ -1,6 +1,6 @@
 /*!
 *
-* jQuery animateAuto Plugin 1.1.2
+* jQuery animateAuto Plugin v1.1.3
 * Based on the original code provided by Darcy Clarke at:
 * http://darcyclarke.me/development/fix-jquerys-animate-to-allow-auto-values/
 *
@@ -22,9 +22,9 @@
 		return this.each(function(i, el){
 			//Create a copy of the element, then measure it's height and width if they were "auto"
 			elem = $(el);
-			clone = elem.clone().css({"height":"auto","width":"auto"}).appendTo(elem.parent());
-			height = clone.css("height");
-			width = clone.css("width");
+			clone = elem.clone().css({height:'auto', width:'auto'}).appendTo(elem.parent());
+			height = clone.height();
+			width = clone.width();
 			clone.remove();
 
 			//Temporarily change the height and width property if the original parameters had them listed as "auto"
