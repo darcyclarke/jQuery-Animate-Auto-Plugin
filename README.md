@@ -10,7 +10,6 @@ A very simply plugin that extends the native jQuery.fn.animate function to suppo
 	testDiv.animate({
 		height: 'auto',
 		width: 'auto',
-		color: 'red'
 	}, 500, 'linear', function() {
 		console.log('Oh look, the animation finished, and now we're getting this fancy callback.');
 	})
