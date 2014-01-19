@@ -1,4 +1,4 @@
-jQuery animateAuto Plugin v1.1.3
+jQuery animateAuto Plugin v1.1.4
 =============
 
 A very simply plugin that extends the native jQuery.fn.animate function to support 'auto' as a viable property for width or height animations.  So, whereas the following example would previously throw all sorts of errors (or simply not work), it is now a perfectly valid animation hash:
@@ -16,7 +16,7 @@ A very simply plugin that extends the native jQuery.fn.animate function to suppo
 
 License
 ------------
-MIT License, Copyright 2013, Alex Zaslavsky
+MIT License, Copyright 2014, Alex Zaslavsky
 
 This plugin is developed from the original source provided by Darcy Clarke at the following URL:
 http://darcyclarke.me/development/fix-jquerys-animate-to-allow-auto-values/
