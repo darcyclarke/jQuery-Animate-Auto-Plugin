@@ -1,10 +1,12 @@
 /*!
- *
- * jQuery Animate Auto Values Plugin v.1.0
- * http://darcyclarke.me/development/fix-jquerys-animate-to-allow-auto-values/
- *
- * Copyright 2011, Darcy Clarke
- * Do what you want license
- * 
- */
-jQuery.fn.animateAuto=function(a,b,c){var d,e,f;return this.each(function(g,h){h=jQuery(h),d=h.clone().css({height:"auto",width:"auto"}).appendTo("body");e=d.css("height"),f=d.css("width"),d.remove();if(a==="height")h.animate({height:e},b,c);else if(a==="width")h.animate({width:f},b,c);else if(a==="both")h.animate({width:f,height:e},b,c)})}
+*
+* jQuery animateAuto Plugin v1.1.4
+* Based on the original code provided by Darcy Clarke at:
+* http://darcyclarke.me/development/fix-jquerys-animate-to-allow-auto-values/
+*
+* Copyright 2014, Alex Zaslavsky
+* MIT License
+* 
+*/
+
+(function(e){var t=e;var n=e.fn.animate;e.fn.animate=function(){var r=arguments[0];var i=e.speed(arguments[1],arguments[2],arguments[3]);return this.each(function(e,s){var o,u,a,f,l,c,h;o=t(s);u=o.clone().css({height:"auto",width:"auto"}).appendTo(o.parent());a=u.height();f=u.width();u.remove();l={};if(r.height&&r.height==="auto"){l.height=r.height=a}if(r.width&&r.width==="auto"){l.width=r.width=f}c=t.extend(true,{},i);if(c.complete){h=c.complete;c.complete=function(){for(var e in l){o.css(e,"auto")}h.call(o)}}n.call(o,r,c)})}})(jQuery)
