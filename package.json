@@ -1,0 +1,12 @@
+{
+  "name": "jquery-animate-auto",
+  "description": "Enable animation of height and width with the default .animate() function when setting the value to 'auto'",
+  "authosr": [
+    { "name": "Darcy Clarke" },
+    { "name": "Alex Zaslavsky" }
+  ],
+  "version": "1.1.4",
+  "dependencies": {
+    "jquery": ">=1.8.0"
+  }
+}
