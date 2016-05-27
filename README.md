@@ -1,4 +1,4 @@
-jQuery animateAuto Plugin v1.1.4
+jQuery animateAuto Plugin
 =============
 
 A very simply plugin that extends the native jQuery.fn.animate function to support 'auto' as a viable property for `width` or `height` animations.
